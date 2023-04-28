@@ -39,3 +39,10 @@ docker-compose logs -f kibana
 docker-compose exec elasticsearch bash
 docker-compose exec logstash bash
 docker-compose exec kibana bash
+
+## logstash 파이프 라인수정
+
+./logstassh/logstash.conf 파일 수정
+
+docker-compose stop logstash
+docker-compose start logstash
